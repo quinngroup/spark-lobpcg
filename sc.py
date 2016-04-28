@@ -124,7 +124,7 @@ if __name__ == "__main__":
     #M=numpy.random.rand(L.shape[0],L.shape[1])
     #M=M.T.dot(M)/2.
     #w,V = scipy.sparse.linalg.lobpcg(L,rX,largest=True,maxiter=1,M=M)
-    w,V = mylobpcg(L,rX) #,largest=True,maxiter=1,M=M)
+    w,V = mylobpcg(L2,rX, largest=True) #,largest=True,maxiter=1,M=M)
     #V=normalizeRows(V)
     #print(V)
     #V=V1
