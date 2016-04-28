@@ -111,7 +111,7 @@ if __name__ == "__main__":
     L = laplacian(A) #I - D*A*D
     #D = laplacian(A,mode='D')
     # Find the eigenvectors.
-    w,V = eigens(L, k)
+    #w,V = eigens(L, k)
     rX = numpy.random.rand(L.shape[1],k)
     #rX,_ = numpy.linalg.qr(rX)
     #n=L.shape[0]
@@ -123,7 +123,7 @@ if __name__ == "__main__":
     M=None
     #M=numpy.random.rand(L.shape[0],L.shape[1])
     #M=M.T.dot(M)/2.
-    w,V = scipy.sparse.linalg.lobpcg(L,rX,largest=True,maxiter=1,M=M)
+    #w,V = scipy.sparse.linalg.lobpcg(L,rX,largest=True,maxiter=1,M=M)
     w,V = mylobpcg(L,rX) #,largest=True,maxiter=1,M=M)
     #V=normalizeRows(V)
     #print(V)
