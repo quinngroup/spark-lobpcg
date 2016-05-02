@@ -62,7 +62,7 @@ def lobpcg(A,X,maxiter=20, largest=False, M=None, tol = 10e-6):
 		
 if __name__=='__main__':
 	import numpy
-	n=3000
+	n=300
 	k=3
 	A = numpy.random.rand(n,n)
 	A = (A.T*A)/2
